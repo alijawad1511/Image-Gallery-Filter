@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/248b31097f.js" crossorigin="anonymous"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/hairFilter.js"></script>
+    <script src="js/hatFilter.js"></script>
+    <script src="js/hoodieFilter.js"></script>
+    <script src="js/skullFilter.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsiveness.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            
+            <h1 class="sidebar-title">Gallery</h1>
+            <ul>
+                <li id="background">
+                    <span>Backgrounds</span>
+                    <i class="fas fa-caret-down"></i>
+                    <div class="bg_dropdown">
+                        <div class="color" onclick="setOrangeBgFilter()">Orange</div>
+                        <div class="color" onclick="setGreenBgFilter()">Green</div>
+                        <div class="color" onclick="setPinkBgFilter()">Pink</div>
+                        <div class="color" onclick="setRedBgFilter()">Red</div>
+                        <div class="color" onclick="setIndigoBgFilter()">Indigo</div>
+                        <div class="color" onclick="setDarkgreyBgFilter()">Dark Grey</div>
+                    </div>
+                </li>
+                <li id="hair">
+                    <span>Hairs</span>
+                    <i class="fas fa-caret-down"></i>
+                    <div class="bg_dropdown">
+                        <div class="color" onclick="setBlueHairsFilter()">Blue</div>
+                        <div class="color" onclick="setBrownHairsFilter()">Brown</div>
+                        <div class="color" onclick="setGreenHairsFilter()">Green</div>
+                        <div class="color" onclick="setPurpleHairsFilter()">Purple</div>
+                        <div class="color" onclick="setRedHairsFilter()">Red</div>
+                    </div>
+                </li>
+                <li id="hat">
+                    <span>Hats</span>
+                    <i class="fas fa-caret-down"></i>
+                    <div class="bg_dropdown">
+                        <div class="color" onclick="setBlueHatFilter()">Blue</div>
+                        <div class="color" onclick="setBrownHatFilter()">Brown</div>
+                        <div class="color" onclick="setGreyHatFilter()">Grey</div>
+                        <div class="color" onclick="setPurpleHatFilter()">Purple</div>
+                        <div class="color" onclick="setWhiteHatFilter()">White</div>
+                    </div>
+                </li>
+                <li id="hoody">
+                    <span>Hoodies</span>
+                    <i class="fas fa-caret-down"></i>
+                    <div class="bg_dropdown">
+                        <div class="color" onclick="setBlueHoodieFilter()">Blue</div>
+                        <div class="color" onclick="setColorfulHoodieHoodieFilter()">Colourful</div>
+                        <div class="color" onclick="setGreenHoodieFilter()">Green</div>
+                        <div class="color" onclick="setGreyHoodieFilter()">Grey</div>
+                        <div class="color" onclick="setBrownHoodieFilter()">Brown</div>
+                        <div class="color" onclick="setPinkHoodieFilter()">Pink</div>
+                        <div class="color" onclick="setRedHoodieFilter()">Red</div>
+                        <div class="color" onclick="setYellowHoodieFilter()">Yellow</div>
+                        <div class="color" onclick="setParotHoodieFilter()">Parot</div>
+                    </div>
+                </li>
+                <li id="skull">
+                    <span>Skulls</span>
+                    <i class="fas fa-caret-down"></i>
+                    <div class="bg_dropdown">
+                        <div class="color" onclick="setBlueSkullFilter()">Blue</div>
+                        <div class="color" onclick="setOrangeSkullFilter()">Orange</div>
+                        <div class="color" onclick="setGreenSkullFilter()">Green</div>
+                        <div class="color" onclick="setPurpleSkullFilter()">Purple</div>
+                        <div class="color" onclick="setSkyblueSkullFilter()">Skyblue</div>
+                        <div class="color" onclick="setWhiteSkullFilter()">White</div>
+                        <div class="color" onclick="setYellowblueSkullFilter()">Yellow</div>
+                        <div class="color" onclick="setBrownSkullFilter()">Brown</div>
+                        <div class="color" onclick="setDarkBlueSkullFilter()">Dark BlueBlue</div>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="btn-resetfilter" onclick="resetFilters()">Reset Filters</button>
+        </div>
+        <div id="content">
+
+            <!-- Hairs -->
+            <div class="img-box hairs">
+                <img src="images/hair-blue.png" alt="Blue Hairs">
+                <div class="text">Blue Hairs</div>
+            </div>
+            <div class="img-box hairs">
+                <img src="images/hair-brown.png" alt="Brown Hairs">
+                <div class="text">Brown Hairs</div>
+            </div>
+            <div class="img-box hairs">
+                <img src="images/hair-green.png" alt="Green Hairs">
+                <div class="text">Green Hairs</div>
+            </div>
+            <div class="img-box hairs">
+                <img src="images/hair-purple.png" alt="Purple Hairs">
+                <div class="text">Purple Hairs</div>
+            </div>
+            <div class="img-box hairs">
+                <img src="images/hair-red.png" alt="Red Hairs">
+                <div class="text">Red Hairs</div>
+            </div>
+
+            
+            <!-- Hats -->
+            <div class="img-box hat">
+                <img src="images/hat-blue.png" alt="Blue Hat">
+                <div class="text">Blue Hat</div>
+            </div>
+            <div class="img-box hat">
+                <img src="images/hat-brown.png" alt="Brown Hat">
+                <div class="text">Brown Hat</div>
+            </div>
+            <div class="img-box hat">
+                <img src="images/hat-grey.png" alt="Grey Hat">
+                <div class="text">Grey Hat</div>
+            </div>
+            <div class="img-box hat">
+                <img src="images/hat-purple.png" alt="Purple Hat">
+                <div class="text">Purple Hat</div>
+            </div>
+            <div class="img-box hat">
+                <img src="images/hat-white.png" alt="White Hat">
+                <div class="text">White Hat</div>
+            </div>
+
+
+            <!-- Hoodies -->
+            <div class="img-box hoodie">
+                <img src="images/hoody-blue.png" alt="Blue Hoodie">
+                <div class="text">Blue Hoodie</div>
+            </div>
+            <div class="img-box hoodie">
+                <img src="images/hoody-colourful.png" alt="Colourful Hoodie">
+                <div class="text">Colourful Hoodie</div>
+            </div>
+            <div class="img-box hoodie">
+                <img src="images/hoody-green.png" alt="Green Hoodie">
+                <div class="text">Green Hoodie</div>
+            </div>
+            <div class="img-box hoodie">
+                <img src="images/hoody-grey.png" alt="Grey Hoodie">
+                <div class="text">Grey Hoodie</div>
+            </div>
+            <div class="img-box hoodie">
+                <img src="images/hoody-brown.png" alt="Brown Hoodie">
+                <div class="text">Brown Hoodie</div>
+            </div>
+            <div class="img-box hoodie">
+                <img src="images/hoody-pink.png" alt="Pink Hoodie">
+                <div class="text">Pink Hoodie</div>
+            </div>
+            <div class="img-box hoodie">
+                <img src="images/hoody-red.png" alt="Red Hoodie">
+                <div class="text">Red Hoodie</div>
+            </div>
+            <div class="img-box hoodie">
+                <img src="images/hoody-yellow.png" alt="Yellow Hoodie">
+                <div class="text">Yellow Hoodie</div>
+            </div>
+            <div class="img-box hoodie">
+                <img src="images/hoody-parot.png" alt="Parrot Hoodie">
+                <div class="text">Parrot Hoodie</div>
+            </div>
+
+
+
+            <!-- Skulls -->
+            <div class="img-box skull">
+                <img src="images/skull-blue.png" alt="Blue Skull">
+                <div class="text">Blue Skull</div>
+            </div>
+            <div class="img-box skull">
+                <img src="images/skull-orange.png" alt="Orange Skull">
+                <div class="text">Orange Skull</div>
+            </div>
+            <div class="img-box skull">
+                <img src="images/skull-green.png" alt="Green Skull">
+                <div class="text">Green Skull</div>
+            </div>
+            <div class="img-box skull">
+                <img src="images/skull-purple.png" alt="Purple Skull">
+                <div class="text">Purple Skull</div>
+            </div>
+            <div class="img-box skull">
+                <img src="images/skull-skyblue.png" alt="Skyblue Skull">
+                <div class="text">Skyblue Skull</div>
+            </div>
+            <div class="img-box skull">
+                <img src="images/skull-white.png" alt="White Skull">
+                <div class="text">White Skull</div>
+            </div>
+            <div class="img-box skull">
+                <img src="images/skull-yellow.png" alt="Yellow Skull">
+                <div class="text">Yellow Skull</div>
+            </div>
+            <div class="img-box skull">
+                <img src="images/skull-brown.png" alt="Brown Skull">
+                <div class="text">Brown Skull</div>
+            </div>
+            <div class="img-box skull">
+                <img src="images/skull-darkblue.png" alt="Dark Blue Skull">
+                <div class="text">Dark Blue Skull</div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
